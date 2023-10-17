@@ -1,0 +1,214 @@
+/* :root {
+    --color_background: #9DC08B ;
+    --color-primary: #40513B;
+    --color-primary-text: white;
+  } */
+
+  :root {
+    --color_background: #2E0249 ;
+    --color-primary: #A91079;
+    --color-primary-text: white;
+  }
+
+@font-face {
+	font-family: 'dp'; 
+	src: url(../fonts/DolomanPavljenko.otf); 
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background: var(--color_background);
+    color:var(--color-primary-text);
+    font-family: 'dp';
+    }
+.menu{
+    text-align: center;
+    height: 100px;
+    background-color: var(--color-primary);
+    vertical-align: middle;
+    line-height: 100px;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+
+.menu_element {
+	color: var(--color-primary-text); /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 24px;
+    margin: 0px 10px 0 10px;
+
+}
+.menu_element:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: var(--color_background); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.menu_element:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: var(--color_background); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+
+
+.content{
+    position:relative;
+    width:100%;
+    height:100%;
+    display: inline-block;
+}
+
+.content_about_left{
+    float: left;
+    position: relative;
+
+    margin-left:20%;
+    width: 29%;
+    height:800px;
+
+}
+
+
+
+.name{
+    position: relative;
+    top:50px;
+    font-size: 74px;
+}
+
+.surname{
+    position: relative;
+    font-size: 58px;
+    top:50px;
+
+}
+
+
+.education{
+    position: relative;
+
+    font-size: 38px;
+    top:50px;
+}
+
+.mygithub{
+    position: relative;
+    font-size: 46px;
+    top:50px;
+}
+
+.mygithub a{
+    color: var(--color-primary-text)
+}
+
+
+
+.content_about_right{
+    /* display: inline; */
+    float: right;
+    position: absolute;
+
+    margin-left:52%;
+    width: 29%;
+    height:100%;
+    /* background-color: aqua; */
+}
+.photo{
+    position: relative;
+    top:50px;
+    max-width: 95%;
+    max-height:100%;
+}
+
+
+/* STACK */
+
+.block{
+    position:relative;
+    width:50%;
+    height:150px;
+    margin: 10px 0px 0px 25%;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    border:3px dashed var(--color-primary);
+}
+.block_title{
+    margin:5px 0px 0px 10px;
+    font-size: 48px;
+    display: block;
+    color:var(--color-primary);
+}
+
+.block_text{
+    margin:10px 0px 0px 20px;
+    font-size: 36px;
+}
+
+.project{
+    position: relative;
+    margin:10px 0px 10px 20%;
+    width: 60%;
+    height: 400px;
+    /* background-color: aqua; */
+    border: 3px dashed var(--color-primary);
+    border-radius: 10px;
+}
+.project_content {
+    display: inline-block;
+    vertical-align: top; /* чтобы выровнять элементы по верхнему краю */
+    position: relative;
+    width:60%;
+    margin-left:10px;
+    margin-top: 20px;
+    max-height: 350px;
+
+  }
+
+  .project_photo{
+    position: relative;
+    max-height: 350px;
+    margin-top: 20px;
+    width:30%;
+  }
+  .project_name{
+    font-size: 48px;;
+  }
+.project_text{
+    font-size: 24px;;
+
+}
+
+
+.footer {
+    background-color: var(--color-primary);
+     /* position: absolute; */
+     right: 0;
+     /* bottom: -20%; */
+     text-align: center; 
+     width: 100%;   
+     font-size: 19px;
+    font-weight: bold;
+    height: 100px;
+    line-height: 100px;
+
+   }
+
+
